@@ -2,9 +2,20 @@ package de.heikostumpf.aws.s3bucketio.s3bucketio.models;
 
 public class BucketObject {
 
+    private String bucketName;
+
     private String fileName;
 
     private String fileContent;
+
+
+    public String getBucketName() {
+        return bucketName;
+    }
+
+    public void setBucketName(String bucketName) {
+        this.bucketName = bucketName;
+    }
 
     public String getFileName() {
         return fileName;
